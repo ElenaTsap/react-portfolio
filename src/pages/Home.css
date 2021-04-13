@@ -1,0 +1,10 @@
+.home-container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(210, 105, 58, 1) 35%, rgba(210, 239, 82, 1) 100%);
+}
+
+* {
+    cursor: none !important;
+}
+

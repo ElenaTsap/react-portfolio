@@ -1,0 +1,98 @@
+.footer-container{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    background-color: #FEFEF3;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700;
+}
+
+.footer-container > *{
+    margin: 30px 40px;
+}
+
+.footer-container > .nav-item{
+    color: black;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700;
+}
+
+.footer-links-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-links-container > div > a {
+    text-decoration: none;
+    color: black;
+    margin-right: 14px;
+}
+
+
+.footer-links-container > div > a:visited {
+    color: black;
+}
+
+/* css for the wave */
+
+.wave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, sandybrown, chocolate);
+    height: 50px;
+    position: relative;
+    margin-bottom: 20px;
+}
+    
+.wave::before,
+.wave::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+}
+    
+.wave::before {
+    height: 10px;
+    background-size: 20px 20px;
+/*     background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px); */
+}
+
+.wave::after {
+    height: 15px;
+    background-size: 40px 20px;
+/*     background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px); */
+}
+    
+.wave--top {
+    background: linear-gradient(to top, sandybrown, chocolate);
+}
+
+.wave::before,
+.wave::after {
+    bottom: auto;
+    top: 0;
+}
+
+.wave::before {
+    background-image: radial-gradient(circle at 10px 15px, transparent 12px, white 13px);
+}
+
+.wave::after {
+    background-image: radial-gradient(circle at 10px 0, white 12px, transparent 13px);
+}
+
+.content {
+    color: #333;
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+
+

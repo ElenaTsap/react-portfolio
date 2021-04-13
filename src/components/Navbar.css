@@ -1,0 +1,28 @@
+.navbar-container {
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+
+}
+
+.nav-item {
+    text-decoration: none;
+    margin: 30px 40px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.nav-item:visited {
+    color: BE2EFD;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid black;
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
