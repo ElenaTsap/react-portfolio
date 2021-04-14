@@ -1,7 +1,9 @@
 .projects-container {
     height: auto;
     width: 100%;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #dbce54;
 }
 
@@ -13,9 +15,9 @@
     grid-column-gap: 20px;
     grid-row-gap: 40px;
     grid-template-rows: repeat(auto calc()); */
-    display: flex;
+/*     display: flex;
     flex-wrap: wrap;
-    margin: 0 20%;
+    margin: 0 20%; */
 }
 
 .project-card {

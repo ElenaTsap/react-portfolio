@@ -2,26 +2,26 @@ import './Grid.css'
 import GridWrapper from './GridWrapper'
 import { CSSGrid, layout } from 'react-stonecutter';
 
-const Grid = () => {    
-    return (           
+
+const Grid = ({ displayProjects }) => {    
+    console.log(displayProjects);
+    return (    
+
+
         <GridWrapper
-            className='grid-container'
+            className='grid-inner'
             component="div"
-            columns={1}
-            columnWidth={200}
-            gutterWidth={20}
-            gutterHeight={5}
+            columns={3}
+            columnWidth={450}
+            gutterWidth={40}
+            gutterHeight={40}
             layout={layout.pinterest}
             duration={800}
             easing="ease-out"
         >
-            <div key="A" itemHeight={200}>A</div>
-            <div key="B" itemHeight={100}>B</div>
-            <div key="C" itemHeight={100}>C</div>
-            <div key="D" itemHeight={100}>D</div>
-            <div key="E" itemHeight={100}>E</div>
-            <div key="F" itemHeight={100}>F</div>
+            {displayProjects}
         </GridWrapper>
+
     )
 }
 

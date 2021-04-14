@@ -1,4 +1,5 @@
-import './Projects.css'
+/* import './Projects.css' */
+import Grid from '../components/Grid'
 import ProjectCard from '../components/ProjectCard'
 
 const Projects = () => {
@@ -11,7 +12,7 @@ const Projects = () => {
             technologiesUsed: 'HTML, CSS, JavaScript, React',
             gitHubLink: 'https://github.com/',
             websiteLink: 'https://github.com/',
-            gridColumn: '1/6'
+            itemHeight: '400'
         },
         {
             id: '02',
@@ -21,7 +22,7 @@ const Projects = () => {
             technologiesUsed: 'HTML, CSS, JavaScript, React',
             gitHubLink: 'https://github.com/',
             websiteLink: 'https://github.com/',
-            gridColumn: '2/8'
+            itemHeight: '400'
         },
         {
             id: '03',
@@ -31,32 +32,45 @@ const Projects = () => {
             technologiesUsed: 'HTML, CSS, JavaScript, React',
             gitHubLink: 'https://github.com/',
             websiteLink: 'https://github.com/',
-            gridColumn: '3/8'
+            itemHeight: '400'
         },
     ]
 
     const displayProjects = myProjects.map((project)=> {
         console.log(project.id, project.projectName);
-        return (<ProjectCard
-            key = {project.id}
-            projectName = {project.projectName}
-            imgLink = {project.imgLink}
-            infoText = {project.infoText}
-            technologiesUsed = {project.technologiesUsed}
-            gitHubLink = {project.gitHubLink}
-            websiteLink = {project.websiteLink}
-            gridColumn = {project.gridColumn}
-        />)
+        return (
+            <div key = {project.id} className = 'new-card'>
+                <ProjectCard
+                
+                imgLink = {project.imgLink}
+                projectName = {project.projectName}
+                infoText = {project.infoText}
+                technologiesUsed = {project.technologiesUsed}
+                gitHubLink = {project.gitHubLink}
+                websiteLink = {project.websiteLink}
+                itemHeight={project.itemHeight}
+            />
+            </div>
+
+        )
     })
 
     return (
+        <section className = 'projects-container'>
+            <div className = ' grid-container'>
+                <Grid displayProjects = {displayProjects}/>
+            </div>
+        </section>
+    )
+}
+
+export default Projects
+
+/*     return (
         <section className = 'projects-container'>
             <div className = ' grid-container'>
             {displayProjects}
             </div>
             
         </section>
-    )
-}
-
-export default Projects
+    ) */

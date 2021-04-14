@@ -9,7 +9,7 @@ import Cursor from './components/Cursor'
 import CursorContextProvider from "./components/CursorContextProvider";
 import {useState, useEffect} from 'react'
 import Spinner from './components/Spinner'
-import Grid from './components/Grid';
+
 
 const App = () => {
   const [spinner, setSpinner] = useState(true);
@@ -37,8 +37,7 @@ const App = () => {
               <Projects/>
             </Route>
             <Route exact path = '/about'>
-              {/* <About/> */}
-              <Grid/>
+              <About/>
             </Route>
           </Switch>
 
