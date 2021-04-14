@@ -11,7 +11,7 @@ const Projects = () => {
             technologiesUsed: 'HTML, CSS, JavaScript, React',
             gitHubLink: 'https://github.com/',
             websiteLink: 'https://github.com/',
-            gridColumn: '3/8'
+            gridColumn: '1/6'
         },
         {
             id: '02',
@@ -21,7 +21,7 @@ const Projects = () => {
             technologiesUsed: 'HTML, CSS, JavaScript, React',
             gitHubLink: 'https://github.com/',
             websiteLink: 'https://github.com/',
-            gridColumn: '3/8'
+            gridColumn: '2/8'
         },
         {
             id: '03',
@@ -52,7 +52,7 @@ const Projects = () => {
     return (
         <section className = 'projects-container'>
             <div className = ' grid-container'>
-                {displayProjects}
+            {displayProjects}
             </div>
             
         </section>

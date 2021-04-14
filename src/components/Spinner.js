@@ -6,7 +6,7 @@ import Footer from './Footer' */
 
 const Spinner = () => {
     return (
-        <div className = 'spinner-container'>
+        <div className = 'spinner-container' style = {{overflow: 'hidden'}}>
             <div className = 'sun-element'></div>
 {/*             <div className='.sun-element'>
                 <Navbar/>

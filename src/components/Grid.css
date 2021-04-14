@@ -1,0 +1,10 @@
+.grid-container  {
+    width: 100%;
+    background-color: rgb(165, 165, 165);
+}
+
+.grid-container > * {
+    width: 100%;
+    background-color: lawngreen;
+    width: 100%;
+}

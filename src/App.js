@@ -9,40 +9,43 @@ import Cursor from './components/Cursor'
 import CursorContextProvider from "./components/CursorContextProvider";
 import {useState, useEffect} from 'react'
 import Spinner from './components/Spinner'
+import Grid from './components/Grid';
 
 const App = () => {
   const [spinner, setSpinner] = useState(true);
 
   useEffect(() => {
+    document.body.style.overflow = "hidden";
     setTimeout(() => { 
       setSpinner(false)
+      document.body.style.overflowY = "scroll";
 }, 5600);
   }, [])
 
   return (
-        <CursorContextProvider>
-          <Cursor />
-            
-            <div className='main-main'>
-              <Navbar/>
-              
-              <Switch>
-                <Route exact path = '/'>
-                  <Home/>
-                </Route>
-                <Route exact path = '/projects'>
-                  <Projects/>
-                </Route>
-                <Route exact path = '/about'>
-                  <About/>
-                </Route>
-              </Switch>
+    <CursorContextProvider>
+      <Cursor />
+      {spinner ? <Spinner/> : 
+        <>
+          <Navbar/>
 
-              <Footer/>
-            </div>
-            {spinner ? <Spinner className = 'spinner-main'/> : ''}  
-        </CursorContextProvider> 
-  );
+          <Switch>
+            <Route exact path = '/'>
+              <Home/>
+            </Route>
+            <Route exact path = '/projects'>
+              <Projects/>
+            </Route>
+            <Route exact path = '/about'>
+              {/* <About/> */}
+              <Grid/>
+            </Route>
+          </Switch>
+
+          <Footer/>
+        </>}
+    </CursorContextProvider> 
+); 
 }
 
 export default App;
@@ -122,3 +125,30 @@ const App = () => {
 }
 
 export default App;*/
+
+/* 
+return (
+        <CursorContextProvider>
+          <Cursor />
+            
+            <div className='main-main'>
+              <Navbar/>
+              
+              <Switch>
+                <Route exact path = '/'>
+                  <Home/>
+                </Route>
+                <Route exact path = '/projects'>
+                  <Projects/>
+                </Route>
+                <Route exact path = '/about'>
+                  <About/>
+                </Route>
+              </Switch>
+
+              <Footer/>
+            </div>
+            {spinner ? <Spinner className = 'spinner-main'/> : ''}  
+        </CursorContextProvider> 
+  );
+*/

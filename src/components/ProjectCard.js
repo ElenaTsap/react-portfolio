@@ -4,18 +4,23 @@ const ProjectCard = ( { projectName, imgLink, infoText, technologiesUsed, gitHub
 
     return (
         <div className = 'project-card' style = {{gridColumn: gridColumn}}>
-            <div className='img-container' style = {{backgroundImage: `url(${imgLink})`}}>{/* <img src = {imgLink}/> */}</div>
+
+            <div className='img-container' style = {{backgroundImage: `url(${imgLink})`}}></div>
             <div className = 'info-container'>
                 <div className = 'text-container'>
-                    <div>{projectName}</div>
+                    {/* <div>{projectName}</div>
                     <div>{infoText}</div>
+                    <div>{technologiesUsed}</div> */}
                     <div>{technologiesUsed}</div>
+                    <div>{projectName}</div>
+                    <div>2021</div>
+                    
                 </div>
                 <div className = 'links-container'>
                     <a href={gitHubLink} target='blank'><FaGithub /></a>
                     <a href={websiteLink} target='blank'><FaLink /></a>
                 </div>
-            </div>
+            </div>      
         </div>
     )
 }
