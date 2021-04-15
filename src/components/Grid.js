@@ -1,4 +1,3 @@
-import './Grid.css'
 import GridWrapper from './GridWrapper'
 import { CSSGrid, layout } from 'react-stonecutter';
 
@@ -11,10 +10,10 @@ const Grid = ({ displayProjects }) => {
         <GridWrapper
             className='grid-inner'
             component="div"
-            columns={3}
-            columnWidth={450}
-            gutterWidth={40}
-            gutterHeight={40}
+            columns={2}
+            columnWidth={600}
+            gutterWidth={80}
+            gutterHeight={80}
             layout={layout.pinterest}
             duration={800}
             easing="ease-out"

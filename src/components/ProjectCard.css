@@ -1,0 +1,90 @@
+.project-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+
+}
+
+.banner {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(0, 0, 0);
+
+}
+
+.banner:hover {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.banner:not( :hover ){ 
+    transition: opacity 1.5s ease-in-out;
+    opacity: 1;
+}
+
+.fa-icon {
+    width: 25px;
+    height: 25px;
+    color: black;
+/*     border: 2px solid black;
+    border-radius: 50%;
+    padding: 4px; */
+}
+
+.img-container {
+    border-radius: 50%;
+    width: 420px;
+    height: 420px;
+    background-color: rgb(70, 70, 70);
+    background-size: cover;
+    background-position: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.text-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-container > div:nth-of-type(1) {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    
+}
+
+.text-container > div:nth-of-type(3) {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.text-container > div:nth-of-type(2) {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
