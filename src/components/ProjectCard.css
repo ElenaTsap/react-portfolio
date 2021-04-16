@@ -10,9 +10,10 @@
 
 .banner {
     position: absolute;
-    width: 420px;
+    /* border-radius: 50%;
+    width: 420px; */
+    width: 600px;
     height: 420px;
-    border-radius: 50%;
     font-size: 32px;
     display: flex;
     align-items: center;
@@ -42,8 +43,9 @@
 }
 
 .img-container {
-    border-radius: 50%;
-    width: 420px;
+    /* border-radius: 50%;
+    width: 420px; */
+    width: 600px;
     height: 420px;
     background-color: rgb(70, 70, 70);
     background-size: cover;
@@ -51,6 +53,7 @@
 }
 
 .info-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
