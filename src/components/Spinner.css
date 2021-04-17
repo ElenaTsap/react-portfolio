@@ -16,7 +16,6 @@
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid black;
-    /* clip-path: circle(40%); */
     background: linear-gradient(180deg, rgba(210, 105, 58, 1) 35%, rgba(210, 239, 82, 1) 100%);
     -webkit-animation : expand-bg 4s linear infinite;
     -moz-animation    : expand-bg 4s linear infinite;
@@ -39,8 +38,8 @@
 
 @keyframes left-to-right {
     from {left: -600px;}
-    30% {left: 0px;}
     40% {left: 0px;}
+    50% {left: 0px;}
     65% {left: 70vw;}
     to {left: 70vw;}
 }
