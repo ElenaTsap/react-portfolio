@@ -1,5 +1,28 @@
 .about-container {
     height: 100vh;
     width: 100%;
-    background-color: #d3dfce;
+    background-color: #949494;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*     overflow: hidden; */
+}
+
+.about-item-card {
+    border: 2px solid black;
+    padding: 2%;
+    position: absolute;
+}
+
+.cv-link > a {
+    color: black;
+    text-decoration: none !important;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700 !important;
+    position: absolute;
+    right: 15%;
+    top: 70%;
 }

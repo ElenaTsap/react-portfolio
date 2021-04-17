@@ -12,12 +12,12 @@
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
-    width:  70%;
+    width:  50%;
 }
 
 
 .photo-container {
-    color: #103AAB;
+   /*  color: #103AAB; */
 }
 
 .nav-item-extra {
@@ -25,7 +25,7 @@
     justify-content: flex-end;
     color: rgb(0, 0, 0);
     font-family: 'Nanum Myeongjo', serif;
-    font-weight: 700;
+    font-weight: 700 !important;
     margin-right: 0px;
 }
 

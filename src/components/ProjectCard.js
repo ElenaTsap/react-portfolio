@@ -27,7 +27,7 @@ const ProjectCard = ( { projectName, imgLink, infoText, technologiesUsed, gitHub
 }
 
     return (
-        <div key = {key} className = 'project-card' data-aos="fade-up" itemHeight =  {itemHeight}>
+        <div key = {key} className = 'project-card' data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"itemHeight =  {itemHeight}>
 
                 <div className='img-container' style = {{backgroundImage: `url(${imgLink})`}}></div>
                 <div className='banner' style = {{backgroundColor: `${categoryColor(category)}`}}>{category}</div>

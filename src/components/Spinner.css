@@ -18,10 +18,10 @@
     border: 4px solid black;
     /* clip-path: circle(40%); */
     background: linear-gradient(180deg, rgba(210, 105, 58, 1) 35%, rgba(210, 239, 82, 1) 100%);
-    -webkit-animation : expand-bg 6s linear infinite;
-    -moz-animation    : expand-bg 6s linear infinite;
-    -o-animation      : expand-bg 6s linear infinite;
-    animation         : expand-bg 6s linear infinite;
+    -webkit-animation : expand-bg 4s linear infinite;
+    -moz-animation    : expand-bg 4s linear infinite;
+    -o-animation      : expand-bg 4s linear infinite;
+    animation         : expand-bg 4s linear infinite;
 }
 
 .moon-element {
@@ -31,10 +31,10 @@
     width: 23vmin;
     height: 23vmin;
     overflow: hidden;
-    -webkit-animation : left-to-right 6s linear infinite;
-    -moz-animation    : left-to-right 6s linear infinite;
-    -o-animation      : left-to-right 6s linear infinite;
-    animation         : left-to-right 6s linear infinite;
+    -webkit-animation : left-to-right 4s linear infinite;
+    -moz-animation    : left-to-right 4s linear infinite;
+    -o-animation      : left-to-right 4s linear infinite;
+    animation         : left-to-right 4s linear infinite;
 }
 
 @keyframes left-to-right {
