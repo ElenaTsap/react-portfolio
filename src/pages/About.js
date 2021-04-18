@@ -40,6 +40,7 @@ const About = () => {
                 desktop : {
                     width: '400px',
                     textAlign: 'left',
+                    top: '30%',
                     left: '35%',
                     background: 'linear-gradient(180deg, rgba(152, 197, 200, 1) 38%, rgba(243, 233, 155, 1) 100%)'
             },
