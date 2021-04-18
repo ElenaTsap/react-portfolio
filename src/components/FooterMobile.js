@@ -23,8 +23,6 @@ const Footer = () => {
                 <div>
                     <NavLink 
                         exact
-                        activeClassName = "active"
-                        className = "bottom-nav"
                         to = "/"
                         onClick = {openMenuHandler}
                     >
