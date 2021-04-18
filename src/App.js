@@ -12,6 +12,7 @@ import Spinner from './components/Spinner'
 
 
 const App = () => {
+
   const [spinner, setSpinner] = useState(true);
 
   useEffect(() => {
@@ -19,8 +20,9 @@ const App = () => {
     setTimeout(() => { 
       setSpinner(false)
       document.body.style.overflowY = "scroll";
-}, 3600);
+    }, 3600);
   }, [])
+
 
   return (
     <CursorContextProvider>
