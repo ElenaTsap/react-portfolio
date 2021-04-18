@@ -11,7 +11,6 @@ const Grid = ({ displayProjects }) => {
             className='grid-inner'
             component="div"
             columns={2}
-            
             columnWidth={matches ? '600' : '350'}
             gutterWidth={80}
             gutterHeight={80}

@@ -46,8 +46,8 @@ const About = () => {
                 mobile : {
                     width: '300px',
                     textAlign: 'left',
-                    top: '40%',
-                    left: '45%',
+                    top: '20%',
+                    left: '5%',
                     background: 'linear-gradient(180deg, rgba(152, 197, 200, 1) 38%, rgba(243, 233, 155, 1) 100%)'
                 }
             }
@@ -76,8 +76,8 @@ const About = () => {
                 mobile : {
                     width: '240px',
                     textAlign: 'center',
-                    left: '25%',
-                    top: '6%',
+                    left: '20%',
+                    top: '10%',
                     background: 'linear-gradient(180deg, rgba(255, 162, 117, 1) 38%, rgba(210, 85, 239, 1) 100%)',
                 }
             }
@@ -131,7 +131,7 @@ const About = () => {
                     width: '100px',
                     textAlign: 'center',
                     left: '55%',
-                    top: '60%',
+                    top: '50%',
                     background: 'linear-gradient(180deg, rgba(255, 0, 68, 1) 8%, rgba(255, 222, 132, 1) 100%)'
                 }
             }
@@ -157,13 +157,8 @@ const About = () => {
                                 <p>{content}</p>
                             </div>
                         </Draggable>
-
-                
             }
             </div>
-
-
-
         )
     })
 

@@ -21,7 +21,6 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <div onClick = {openMenuHandler}><FaTimes/></div>
                     <NavLink 
                         exact
                         activeClassName = "active"
@@ -31,6 +30,9 @@ const Footer = () => {
                     >
                         Home
                     </NavLink>
+                    <div className='closed-menu-container' onClick = {openMenuHandler}>
+                        <FaTimes className = 'fa-icon'/>
+                    </div> 
 
                 </div>
 

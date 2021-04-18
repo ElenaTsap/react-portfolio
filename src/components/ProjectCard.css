@@ -97,4 +97,9 @@
     .img-container {
         width: 350px;
     }
+
+    .banner,
+    .img-container {
+        height: 350px;
+    }
 }
