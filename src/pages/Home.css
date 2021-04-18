@@ -12,12 +12,7 @@
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
-    width:  50%;
-}
-
-
-.photo-container {
-   /*  color: #103AAB; */
+    width:  40%;
 }
 
 .nav-item-extra {
@@ -31,4 +26,11 @@
 
 .nav-item-extra:hover {
     border: none !important;
+}
+
+@media only screen and (max-width: 680px) {
+    .home-text-container {
+        font-size: 1.5rem;
+        width:  60%;
+    }
 }

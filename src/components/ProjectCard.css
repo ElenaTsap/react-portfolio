@@ -1,11 +1,10 @@
 .project-card {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 600px;
     height: 600px;
-
 }
 
 .banner {
@@ -90,4 +89,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 680px) {
+    .project-card, 
+    .banner,
+    .img-container {
+        width: 350px;
+    }
 }

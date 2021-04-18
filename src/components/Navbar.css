@@ -27,3 +27,13 @@
 .active {
     border-bottom: 2px solid black;
 }
+
+@media only screen and (max-width: 680px) {
+    .navbar-container {
+        margin-top: 30px;
+    }
+
+    .nav-item {
+        margin: 20px 30px;
+    }
+}

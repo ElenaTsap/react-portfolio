@@ -73,7 +73,7 @@ const Projects = () => {
     ]
 
     const displayProjects = myProjects.map((project)=> {
-        console.log(project.id, project.projectName);
+
         return (
             <div key = {project.id} className = 'new-card'>
                 <ProjectCard

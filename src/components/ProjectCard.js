@@ -42,7 +42,6 @@ const ProjectCard = ( { projectName, imgLink, infoText, technologiesUsed, gitHub
                 <div className = 'links-container'>
                     <CursorEffect><a href={gitHubLink} target='blank'><FaGithub className = 'fa-icon'/></a></CursorEffect>
                     <CursorEffect><a href={websiteLink} target='blank'><FaLink className = 'fa-icon'/></a></CursorEffect>
-                    
                 </div>
             </div>      
         </div>
