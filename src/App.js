@@ -4,11 +4,13 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import FooterDesktop from './components/FooterDesktop'
+import FooterMobile from './components/FooterMobile'
 import Cursor from './components/Cursor'
 import CursorContextProvider from "./components/CursorContextProvider";
 import {useState, useEffect} from 'react'
 import Spinner from './components/Spinner'
+import useMediaQuery from "./components/useMediaQuery";
 
 
 const App = () => {
@@ -23,6 +25,7 @@ const App = () => {
     }, 3600);
   }, [])
 
+  const matches = useMediaQuery("(min-width: 680px)");
 
   return (
     <CursorContextProvider>
@@ -43,7 +46,7 @@ const App = () => {
             </Route>
           </Switch>
 
-          <Footer/>
+          {matches ? <FooterDesktop/> : <FooterMobile/>}
         </>}
     </CursorContextProvider> 
 ); 
