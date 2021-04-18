@@ -5,7 +5,16 @@ import ProjectCard from '../components/ProjectCard'
 const Projects = () => {
     const myProjects = [
         {
-            id: '01',
+            imgLink: 'https://images.unsplash.com/photo-1615494488088-43ac74d0c232?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+            projectName: 'Final Project',
+            infoText: 'The final project for DCI Web-Dev Course',
+            technologiesUsed: 'HTML, CSS, JavaScript, React',
+            gitHubLink: 'https://github.com/',
+            websiteLink: 'https://github.com/',
+            itemHeight: '600',
+            category: 'web-dev'
+        },
+        {
             imgLink: 'https://images.unsplash.com/photo-1615494488088-43ac74d0c232?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
             projectName: 'Time-tracker',
             infoText: 'A simple, handy and colorful app to keep track of your projects',
@@ -16,20 +25,8 @@ const Projects = () => {
             category: 'web-dev'
         },
         {
-            id: '02',
             imgLink: 'https://images.unsplash.com/photo-1615494488088-43ac74d0c232?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-            projectName: 'Time-tracker',
-            infoText: 'A simple, handy and colorful app to keep track of your projects',
-            technologiesUsed: 'HTML, CSS, JavaScript, React',
-            gitHubLink: 'https://github.com/',
-            websiteLink: 'https://github.com/',
-            itemHeight: '600',
-            category: 'web-dev'
-        },
-        {
-            id: '03',
-            imgLink: 'https://images.unsplash.com/photo-1615494488088-43ac74d0c232?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-            projectName: 'Time-tracker',
+            projectName: 'Phyto App',
             infoText: 'A simple, handy and colorful app to keep track of your projects',
             technologiesUsed: 'HTML, CSS, JavaScript, React',
             gitHubLink: 'https://github.com/',
@@ -38,10 +35,9 @@ const Projects = () => {
             category: 'UI/UX'
         },
         {
-            id: '04',
             imgLink: 'https://images.unsplash.com/photo-1615494488088-43ac74d0c232?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-            projectName: 'Time-tracker',
-            infoText: 'A simple, handy and colorful app to keep track of your projects',
+            projectName: 'IRIX online portfolio',
+            infoText: 'Website for the Architecture office IRIX based in Rotterdam',
             technologiesUsed: 'HTML, CSS, JavaScript, React',
             gitHubLink: 'https://github.com/',
             websiteLink: 'https://github.com/',
@@ -49,10 +45,9 @@ const Projects = () => {
             category: 'web-dev'
         },
         {
-            id: '05',
             imgLink: 'https://images.unsplash.com/photo-1615494488088-43ac74d0c232?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-            projectName: 'Time-tracker',
-            infoText: 'A simple, handy and colorful app to keep track of your projects',
+            projectName: 'Cabanon Concrete Retreat',
+            infoText: 'Visual Identity for Cabanon in Chania, Crete',
             technologiesUsed: 'HTML, CSS, JavaScript, React',
             gitHubLink: 'https://github.com/',
             websiteLink: 'https://github.com/',
@@ -60,31 +55,23 @@ const Projects = () => {
             category: 'branding'
         },
         {
-            id: '06',
             imgLink: 'https://images.unsplash.com/photo-1615494488088-43ac74d0c232?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-            projectName: 'Time-tracker',
-            infoText: 'A simple, handy and colorful app to keep track of your projects',
+            projectName: 'Morning Glory',
+            infoText: 'A non existent-library that I might never make',
             technologiesUsed: 'HTML, CSS, JavaScript, React',
             gitHubLink: 'https://github.com/',
             websiteLink: 'https://github.com/',
             itemHeight: '600',
-            category: 'web-dev'
+            category: 'UI/UX'
         },
     ]
 
-    const displayProjects = myProjects.map((project)=> {
+    const displayProjects = myProjects.map((project, index)=> {
 
         return (
-            <div key = {project.id} className = 'new-card'>
+            <div key = {index} className = 'new-card'>
                 <ProjectCard
-                imgLink = {project.imgLink}
-                projectName = {project.projectName}
-                infoText = {project.infoText}
-                technologiesUsed = {project.technologiesUsed}
-                gitHubLink = {project.gitHubLink}
-                websiteLink = {project.websiteLink}
-                itemHeight={project.itemHeight}
-                category = {project.category}
+                    projectData = {myProjects[index]}
             />
             </div>
 
