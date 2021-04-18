@@ -19,7 +19,13 @@ const About = () => {
                     backgroundImage: 'url("https://media.giphy.com/media/WRshFdOvxJzQsL9XK5/giphy.gif")',
                     backgroundSize: 'cover'
                 },
-            mobile : {}
+                mobile : {
+                    width: '100px',
+                    height: '100px',
+                    borderRadius: '50%',
+                    backgroundImage: 'url("https://media.giphy.com/media/WRshFdOvxJzQsL9XK5/giphy.gif")',
+                    backgroundSize: 'cover'
+                }
             }
         },
         {   
@@ -37,7 +43,13 @@ const About = () => {
                     left: '35%',
                     background: 'linear-gradient(180deg, rgba(152, 197, 200, 1) 38%, rgba(243, 233, 155, 1) 100%)'
             },
-                mobile : {}
+                mobile : {
+                    width: '300px',
+                    textAlign: 'left',
+                    top: '40%',
+                    left: '45%',
+                    background: 'linear-gradient(180deg, rgba(152, 197, 200, 1) 38%, rgba(243, 233, 155, 1) 100%)'
+                }
             }
         },
         {
@@ -61,7 +73,13 @@ const About = () => {
                     top: '10%',
                     background: 'linear-gradient(180deg, rgba(255, 162, 117, 1) 38%, rgba(210, 85, 239, 1) 100%)',
             },
-                mobile : {}
+                mobile : {
+                    width: '240px',
+                    textAlign: 'center',
+                    left: '25%',
+                    top: '6%',
+                    background: 'linear-gradient(180deg, rgba(255, 162, 117, 1) 38%, rgba(210, 85, 239, 1) 100%)',
+                }
             }
         },
 
@@ -83,7 +101,13 @@ const About = () => {
                     top: '40%',
                     background: 'linear-gradient(180deg, rgba(152, 216, 141, 1) 8%, rgba(0, 235, 207, 1) 100%)'
             },
-                mobile : {}
+                mobile : {
+                    width: '160px',
+                    textAlign: 'center',
+                    left: '25%',
+                    top: '29%',
+                    background: 'linear-gradient(180deg, rgba(152, 216, 141, 1) 8%, rgba(0, 235, 207, 1) 100%)'
+                }
             }
         },
         {
@@ -103,7 +127,13 @@ const About = () => {
                     top: '20%',
                     background: 'linear-gradient(180deg, rgba(255, 0, 68, 1) 8%, rgba(255, 222, 132, 1) 100%)'
             },
-                mobile : {}
+                mobile : {
+                    width: '100px',
+                    textAlign: 'center',
+                    left: '55%',
+                    top: '60%',
+                    background: 'linear-gradient(180deg, rgba(255, 0, 68, 1) 8%, rgba(255, 222, 132, 1) 100%)'
+                }
             }
         },
 
@@ -122,7 +152,7 @@ const About = () => {
                                 </div>
                             </Draggable>
                             : <Draggable>
-                            <div key = {index} className = 'about-item-card' style = {item.styles.desktop}>
+                            <div key = {index} className = 'about-item-card' style = {item.styles.mobile}>
                                 <h4 className = 'about-item-title'>{item.title}</h4>
                                 <p>{content}</p>
                             </div>
