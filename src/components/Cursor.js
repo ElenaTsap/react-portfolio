@@ -20,7 +20,7 @@ const Cursor = () => {
         };
     }, []);  
 
-    const matches = useMediaQuery("(min-width: 680px)");
+    const matches = useMediaQuery("(hover: none)");
     
     return (
 
@@ -35,7 +35,7 @@ const Cursor = () => {
                     pointerEvents: "none"
                 }}
             >
-                {matches ? 
+                {matches ? '' :
                 <svg
                     width={50}
                     height={50}
@@ -59,7 +59,7 @@ const Cursor = () => {
                         cy="25"
                         r="8"
                     />
-                </svg> : ''}
+                </svg>}
             </div>
 
     );
