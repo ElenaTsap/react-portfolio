@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import useMousePosition from "./useMousePosition";
 import { CursorContext } from "./CursorContextProvider";
+import useMediaQuery from "./useMediaQuery";
 
 
 const Cursor = () => {
@@ -18,6 +19,8 @@ const Cursor = () => {
         document.body.removeEventListener("mouseleave", handleMouseLeave);
         };
     }, []);  
+
+    const matches = useMediaQuery("(min-width: 680px)");
     
     return (
 
@@ -32,6 +35,7 @@ const Cursor = () => {
                     pointerEvents: "none"
                 }}
             >
+                {matches ? 
                 <svg
                     width={50}
                     height={50}
@@ -55,7 +59,7 @@ const Cursor = () => {
                         cy="25"
                         r="8"
                     />
-                </svg>
+                </svg> : ''}
             </div>
 
     );
