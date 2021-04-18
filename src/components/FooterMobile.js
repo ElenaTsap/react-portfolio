@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
 import {useState} from 'react'
 import './FooterMobile.css'
-import { FaTimes } from 'react-icons/fa';
+import { FaTimes, FaEye } from 'react-icons/fa';
 
 const Footer = () => {
     const [open, setOpen] = useState(true)
@@ -42,7 +42,7 @@ const Footer = () => {
     const closedMenu = () => {
         return (
             <div className='closed-menu-container' onClick = {openMenuHandler}>
-                open
+                <FaEye className = 'fa-icon'/>
             </div> )
     }
 
