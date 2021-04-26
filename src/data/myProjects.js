@@ -5,7 +5,7 @@ const myProjects = [
         infoText: 'A simple, handy and colorful app to keep track of your projects',
         technologiesUsed: 'HTML, CSS, JavaScript, React',
         gitHubLink: 'https://github.com/ElenaTsap/time-tracker',
-        websiteLink: 'https://github.com/ElenaTsap/time-tracker',
+        websiteLink: 'https://time-tracker-now.herokuapp.com',
         itemHeight: '600',
         category: 'web-dev'
     },
@@ -33,7 +33,7 @@ const myProjects = [
         imgLink: 'https://i.imgur.com/VYcHM9f.png',
         projectName: 'Phyto App',
         infoText: 'An app made for plant lovers',
-        technologiesUsed: 'AdobeXD, AdobePs, AdobeAi',
+        technologiesUsed: 'AdobeXd, AdobePs, AdobeAi',
         gitHubLink: '',
         websiteLink: 'https://www.behance.net/elenatsapaki',
         itemHeight: '600',
@@ -53,8 +53,8 @@ const myProjects = [
     {
         imgLink: 'https://i.imgur.com/ix3yNoF.png',
         projectName: 'Morning Glory',
-        infoText: 'A website for online orders for a non-existent breakfast place',
-        technologiesUsed: 'AdobeXD, AdobePs, AdobeAi',
+        infoText: 'A website for online orders for an imaginary breakfast shop',
+        technologiesUsed: 'AdobeXs, AdobePs, AdobeAi',
         gitHubLink: '',
         websiteLink: 'https://www.behance.net/gallery/84421769/Morning-Glory',
         itemHeight: '600',
