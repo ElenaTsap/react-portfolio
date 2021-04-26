@@ -5,9 +5,8 @@ import CursorEffect from '../components/CursorEffect'
 import useMediaQuery from "../components/useMediaQuery";
 
 const About = () => {
-    const matches = useMediaQuery("(min-width: 680px)");
-
     const { title, textContent, styles } = aboutItems;
+    const matches = useMediaQuery("(min-width: 680px)");
 
     const displayAboutItems = aboutItems.map((item, index)=> {
         const content = item.textContent.map((paragraph) => {

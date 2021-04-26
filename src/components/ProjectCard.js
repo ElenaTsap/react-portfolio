@@ -20,7 +20,7 @@ const ProjectCard = ( { projectData } ) => {
                 break;
     
             default:
-                color = 'black'
+                color = 'white'
             break;
     }
     return color;
@@ -37,7 +37,7 @@ const ProjectCard = ( { projectData } ) => {
                     <div>{projectData.technologiesUsed}</div>
                 </div>
                 <div className = 'links-container'>
-                    <CursorEffect><a href={projectData.gitHubLink} target='blank'><FaGithub className = 'fa-icon'/></a></CursorEffect>
+                    <CursorEffect><a href={projectData.gitHubLink} target='blank'>{projectData.gitHubLink != '' ? <FaGithub className = 'fa-icon'/> : ''}</a></CursorEffect>
                     <CursorEffect><a href={projectData.websiteLink} target='blank'><FaLink className = 'fa-icon'/></a></CursorEffect>
                 </div>
             </div>      

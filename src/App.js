@@ -12,7 +12,6 @@ import {useState, useEffect} from 'react'
 import Spinner from './components/Spinner'
 import useMediaQuery from "./components/useMediaQuery";
 
-
 const App = () => {
 
   const [spinner, setSpinner] = useState(true);
