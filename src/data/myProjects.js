@@ -54,7 +54,7 @@ const myProjects = [
         imgLink: 'https://i.imgur.com/ix3yNoF.png',
         projectName: 'Morning Glory',
         infoText: 'A website for online orders for an imaginary breakfast shop',
-        technologiesUsed: 'AdobeXs, AdobePs, AdobeAi',
+        technologiesUsed: 'AdobeXd, AdobePs, AdobeAi',
         gitHubLink: '',
         websiteLink: 'https://www.behance.net/gallery/84421769/Morning-Glory',
         itemHeight: '600',
