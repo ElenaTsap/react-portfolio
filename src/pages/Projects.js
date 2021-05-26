@@ -4,7 +4,6 @@ import ProjectCard from '../components/ProjectCard'
 import myProjects from '../data/myProjects'
 
 const Projects = () => {
-    const { imgLink, projectName, infoText, technologiesUsed, gitHubLink, websiteLink, itemHeight, category } = myProjects;
 
     const displayProjects = myProjects.map((project, index)=> {
         return (

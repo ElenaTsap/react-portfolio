@@ -5,12 +5,11 @@ import CursorEffect from '../components/CursorEffect'
 import useMediaQuery from "../components/useMediaQuery";
 
 const About = () => {
-    const { title, textContent, styles } = aboutItems;
     const matches = useMediaQuery("(min-width: 680px)");
 
     const displayAboutItems = aboutItems.map((item, index)=> {
         const content = item.textContent.map((paragraph) => {
-            return(<p  data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">{paragraph}</p>)
+            return(<p data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">{paragraph}</p>)
         })
         return (
             <div>
@@ -36,7 +35,7 @@ const About = () => {
             {displayAboutItems}
             <CursorEffect>
                 <div className = 'cv-link'>
-                    <a href='https://drive.google.com/file/d/1VEWZ5UL7Wqn-GEq2iurkVL9Avp4Dvxoq/view?usp=sharing' target = 'blank'>my full CV_____</a>
+                    <a href='https://drive.google.com/file/d/1uxQcVNkxXYLKBeinjen90OKwzINFlwDF/view?usp=sharing' target = 'blank'>my full CV_____</a>
                 </div>
             </CursorEffect>
         </section>
