@@ -35,7 +35,7 @@ const About = () => {
             {displayAboutItems}
             <CursorEffect>
                 <div className = 'cv-link'>
-                    <a href='https://drive.google.com/file/d/1uxQcVNkxXYLKBeinjen90OKwzINFlwDF/view?usp=sharing' target = 'blank'>my full CV_____</a>
+                    <a href='https://drive.google.com/file/d/1mv2oxwBXv-GidKU47aPgO24k2YNH1_wG/view?usp=sharing' target = 'blank'>my full CV_____</a>
                 </div>
             </CursorEffect>
         </section>
