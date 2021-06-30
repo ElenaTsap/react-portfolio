@@ -52,11 +52,12 @@ const aboutItems = [
             'CSS',
             'JavaScript',
             'React.js',
-            'React Native',
             'Typescript',
             'MongoDB',
             'Express.js',
-            'Node.js'
+            'Node.js',
+            'coming soon'
+            'React Native'
         ],
         styles: { 
             desktop : {
