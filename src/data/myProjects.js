@@ -1,6 +1,6 @@
 const myProjects = [
     {
-        imgLink: 'https://i.imgur.com/XsEPsTz.png[/img]',
+        imgLink: 'https://i.imgur.com/XsEPsTz.png',
         projectName: 'MERN TODO list',
         infoText: 'Simple TODO list built with the MERN stack',
         technologiesUsed: 'HTML, CSS, JavaScript, React, Node.js, MongoDB, Express.js, Mongoose',
@@ -10,7 +10,7 @@ const myProjects = [
         category: 'full-stack'
     },
     {
-        imgLink: 'https://i.imgur.com/bpbRtTC.png[/img]',
+        imgLink: 'https://i.imgur.com/bpbRtTC.png',
         projectName: 'React Typescript Quiz',
         infoText: 'A fun quiz app made with React, Typescript and Styled Components',
         technologiesUsed: 'HTML, CSS, Typescript, React, Styled Components',
@@ -30,7 +30,7 @@ const myProjects = [
         category: 'front-end'
     },
     {
-        imgLink: 'https://i.imgur.com/XsEPsTz.png[/img]',
+        imgLink: 'https://i.imgur.com/iuvJvgZ.png',
         projectName: 'Socket chat',
         infoText: 'Chat app made with socket.io',
         technologiesUsed: 'HTML, CSS, JavaScript, socket.io',
