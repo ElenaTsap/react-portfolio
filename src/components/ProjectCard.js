@@ -7,8 +7,12 @@ const ProjectCard = ( { projectData } ) => {
     const categoryColor = (category) => {
         let color;
         switch (category) {
-            case 'web-dev':
+            case 'front-end':
                 color = 'radial-gradient(circle, rgba(235,244,254,1) 0%, rgba(119,119,119,1) 75%)'
+                break;
+
+            case 'full-stack':
+                color = 'radial-gradient(circle, rgba(235,244,254,1) 0%, rgba(155,169,195,1) 75%)'
                 break;
             
             case 'branding':
@@ -37,8 +41,8 @@ const ProjectCard = ( { projectData } ) => {
                     <div>{projectData.technologiesUsed}</div>
                 </div>
                 <div className = 'links-container'>
-                    <CursorEffect><a href={projectData.gitHubLink} target='blank'>{projectData.gitHubLink != '' ? <FaGithub className = 'fa-icon'/> : ''}</a></CursorEffect>
-                    <CursorEffect><a href={projectData.websiteLink} target='blank'><FaLink className = 'fa-icon'/></a></CursorEffect>
+                    <CursorEffect><a href={projectData.gitHubLink} target='blank'>{projectData.gitHubLink !== '' ? <FaGithub className = 'fa-icon'/> : ''}</a></CursorEffect>
+                    <CursorEffect><a href={projectData.websiteLink} target='blank'> {projectData.websiteLink !== '' ? <FaLink className = 'fa-icon'/> : ''}</a></CursorEffect>
                 </div>
             </div>      
         </div>

@@ -1,5 +1,25 @@
 const myProjects = [
     {
+        imgLink: 'https://i.imgur.com/XsEPsTz.png[/img]',
+        projectName: 'MERN TODO list',
+        infoText: 'Simple TODO list built with the MERN stack',
+        technologiesUsed: 'HTML, CSS, JavaScript, React, Node.js, MongoDB, Express.js, Mongoose',
+        gitHubLink: 'https://github.com/ElenaTsap/mern-to-do-list/tree/main',
+        websiteLink: 'https://elenas-mern-todo-list.herokuapp.com',
+        itemHeight: '600',
+        category: 'full-stack'
+    },
+    {
+        imgLink: 'https://i.imgur.com/bpbRtTC.png[/img],
+        projectName: 'React Typescript Quiz',
+        infoText: 'A fun quiz app made with React, Typescript and Styled Components',
+        technologiesUsed: 'HTML, CSS, Typescript, React, Styled Components',
+        gitHubLink: 'https://github.com/ElenaTsap/react-ts-quiz',
+        websiteLink: 'https://react-ts--quiz.herokuapp.com',
+        itemHeight: '600',
+        category: 'front-end'
+    },
+    {
         imgLink: 'https://i.imgur.com/WZM0loj.png',
         projectName: 'Time-tracker',
         infoText: 'A simple, handy and colorful app to keep track of your projects',
@@ -7,17 +27,17 @@ const myProjects = [
         gitHubLink: 'https://github.com/ElenaTsap/time-tracker',
         websiteLink: 'https://time-tracker-now.herokuapp.com',
         itemHeight: '600',
-        category: 'web-dev'
+        category: 'front-end'
     },
     {
-        imgLink: 'https://i.imgur.com/hwOQ4q1.png',
-        projectName: 'IRIX online portfolio',
-        infoText: 'Website for the Architecture office IRIX based in Rotterdam',
-        technologiesUsed: 'HTML, CSS, JavaScript, React',
-        gitHubLink: 'https://github.com/',
-        websiteLink: 'https://github.com/',
+        imgLink: 'https://i.imgur.com/XsEPsTz.png[/img]',
+        projectName: 'Socket chat',
+        infoText: 'Chat app made with socket.io',
+        technologiesUsed: 'HTML, CSS, JavaScript, socket.io',
+        gitHubLink: 'https://github.com/ElenaTsap/socket-chat',
+        websiteLink: '',
         itemHeight: '600',
-        category: 'coming soon'
+        category: 'coming soon...'
     },
     {
         imgLink: 'https://i.imgur.com/GHRPTog.png',
@@ -27,7 +47,7 @@ const myProjects = [
         gitHubLink: 'https://github.com/ElenaTsap/graveyard-by-the-sea',
         websiteLink: 'https://elenatsap.github.io/graveyard-by-the-sea/',
         itemHeight: '600',
-        category: 'web-dev'
+        category: 'front-end'
     },
     {
         imgLink: 'https://i.imgur.com/VYcHM9f.png',
@@ -47,7 +67,7 @@ const myProjects = [
         gitHubLink: 'https://github.com/ElenaTsap/itten_tribute',
         websiteLink: 'https://elenatsap.github.io/itten_tribute/',
         itemHeight: '600',
-        category: 'web-dev'
+        category: 'front-end'
     },
 
     {
@@ -60,17 +80,6 @@ const myProjects = [
         itemHeight: '600',
         category: 'UI/UX'
     },
-
-/*     {
-        imgLink: 'https://images.unsplash.com/photo-1615494488088-43ac74d0c232?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-        projectName: 'Nature Loves Courage',
-        infoText: 'Visual Identity Nature Loves Courage Festival',
-        technologiesUsed: 'Adobe Ai, Adobe Ps',
-        gitHubLink: 'https://github.com/',
-        websiteLink: 'https://github.com/',
-        itemHeight: '600',
-        category: 'branding'
-    }, */
 ]
 
 export default myProjects
