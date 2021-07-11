@@ -10,7 +10,7 @@ const myProjects = [
         category: 'full-stack'
     },
     {
-        imgLink: 'https://i.imgur.com/bpbRtTC.png[/img],
+        imgLink: 'https://i.imgur.com/bpbRtTC.png[/img]',
         projectName: 'React Typescript Quiz',
         infoText: 'A fun quiz app made with React, Typescript and Styled Components',
         technologiesUsed: 'HTML, CSS, Typescript, React, Styled Components',
